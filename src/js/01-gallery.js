@@ -13,10 +13,10 @@ galleryEl.addEventListener('click', preventDefaultLink);
 function createGalleryMarkup(galleryArr) {
   return galleryArr
     .map(({ preview, original, description }) => {
-      return ` <li class="gallery__item">
-      <a class="gallery__link" href="${original}">
+      return ` <li class="gallery_item">
+      <a class="gallery_link" href="${original}">
         <img
-          class="gallery__image"
+          class="gallery_image"
           src="${preview}"
           alt="${description}"
         />
